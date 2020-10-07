@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<GridPane fx:id = "pnlWine" xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="christya.WineController" vgap = "5" hgap = "5"> 
+    <padding>
+        <Insets top = "20" left = "20" bottom = "20" right = "20" />
+    </padding>
+    <Label text="Wine Information" GridPane.rowIndex="0" GridPane.columnSpan="2" 
+           GridPane.halignment="CENTER" />
+    <Label text = "Wine ID: " GridPane.columnIndex="0" GridPane.rowIndex="1"
+           GridPane.halignment="RIGHT"/>
+    <TextField fx:id = "txtWineID" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text = "Estate: " GridPane.columnIndex="0" GridPane.rowIndex="2"
+           GridPane.halignment="RIGHT"/>
+    <TextField fx:id = "txtEstate" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text = "Grape: " GridPane.columnIndex="0" GridPane.rowIndex="3"
+           GridPane.halignment="RIGHT"/>
+    <TextField fx:id = "txtGrape" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label text = "Year: " GridPane.columnIndex="0" GridPane.rowIndex="4"
+           GridPane.halignment="RIGHT"/>
+    <TextField fx:id = "txtYear" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Label text = "Quantity: " GridPane.columnIndex="0" GridPane.rowIndex="5"
+           GridPane.halignment="RIGHT"/>
+    <TextField fx:id = "txtQuantity" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Label text = "Price: " GridPane.columnIndex="0" GridPane.rowIndex="6"
+           GridPane.halignment="RIGHT"/>
+    <TextField fx:id = "txtPrice" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+</GridPane>

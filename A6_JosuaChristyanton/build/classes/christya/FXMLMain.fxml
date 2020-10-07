@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefWidth = "650" prefHeight = "300"
+            fx:controller="christya.MainController">
+    <top>
+        <MenuBar>
+            <Menu fx:id = "mnuFile" text = "_File" >
+                <MenuItem fx:id = "itemExit" text = "_Exit" onAction = "#exit"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem text="About" onAction = "#aboutHandler"/>
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <SplitPane dividerPositions = "0.40" >
+            <items>
+                <VBox prefWidth = "200">
+                    <fx:include fx:id="pnlWine" source="FXMLWine.fxml" />
+                </VBox>
+                <StackPane prefWidth = "500">
+                    <fx:include fx:id="pnlView" source="FXMLWineTableView.fxml" />
+                </StackPane>
+            </items>
+        </SplitPane>
+    </center>
+    <bottom>
+        <ToolBar>
+            <items>
+                <Pane HBox.hgrow="ALWAYS" />
+                <Button fx:id = "btnSave" prefWidth = "70" text = "Add" onAction = "#addNew" />
+                <Button fx:id = "btnUpdate" prefWidth = "70" text = "Update" onAction = "#updateRecord" />
+                <Button fx:id = "btnDelete" prefWidth = "70" text = "Delete" onAction = "#deleteRecord" />
+                <Pane HBox.hgrow="ALWAYS" />
+            </items>
+        </ToolBar>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id = "pnlView" alignment = "CENTER" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="christya.WineTableViewController" spacing = "10">
+    <children>
+        <Label text = "Wine List" />
+        <TableView fx:id = "tblWines">
+            <columns>
+                <TableColumn fx:id = "idCol" prefWidth = "50" text = "Wine ID" />
+                <TableColumn fx:id = "estCol" prefWidth = "70" text = "Estate" />
+                <TableColumn fx:id = "grapeCol" prefWidth = "70" text = "Grape" />
+                <TableColumn fx:id = "yearCol" prefWidth = "50" text = "Year" />
+                <TableColumn fx:id = "qtyCol" prefWidth = "70" text = "Quantity" />
+                <TableColumn fx:id = "priceCol" prefWidth = "50" text = "Price" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>
